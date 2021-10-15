@@ -11,6 +11,9 @@ body {
     background: #FFFFFF;
 }
 
+.principal {
+}
+
 .nav-fix {
    width: 13.75rem;
    height: 100vh;
@@ -78,7 +81,82 @@ body {
     color: #725C5C;
 }
 
+/* ############################# */
+.main {
+    width: 100%;
+}
+
 .topo {
     width: 100%;
+    height: 4.25rem;
     background: #FDF1EB;
+    padding-top: 23px;
+    padding-bottom: 19px;
+    z-index: 99;
+}
+
+.titulo {
+    padding-left: 256px;
+}
+
+.titulo p{
+    font-family: var(--font-default);
+    color: #725C5C;
+}
+
+.p1, .p3{
+    margin-top: -5px;
+    margin-bottom: -5px;
+    font-size: 0.875rem;
+}
+
+.p2 {
+    margin: 0;
+    font-size: 1.375rem;
+}
+
+.language {
+    border: 1px solid #CCCCCC;
+    width: 97px;
+    height: 34px;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 202px;
+    height: 34px;
+    font-family: var(--font-sencondary);
+    font-weight: 400;
+}
+
+.login span {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.login p {
+    font-size: 0.75rem;
+    margin-top: -5px;
+}
+
+.img-login {
+    width: 50px;
+    height: 45px;
+}
+
+.img-login img {
+    width: 35px;
+}
+
+.login-badge {
+    display: flex;
+    position: relative;
+    right: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
 }
