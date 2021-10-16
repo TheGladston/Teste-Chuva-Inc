@@ -16,6 +16,9 @@ body {
 .navbar1 {
     width: 220px;
     height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
     z-index: 100;
 }
@@ -116,6 +119,7 @@ body {
 .principal {
     width: 100%;
     height: 100vh;
+    margin-left: 220px;
 }
 
 /* Header */
@@ -263,6 +267,8 @@ body {
 
 /* End Header */
 
+/* ########################################################################## */
+
 /* Main */
 
 #main {
@@ -348,6 +354,7 @@ body {
 .video-section {
     justify-content: space-between;
     padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .video-section img {
@@ -394,6 +401,51 @@ body {
     padding-top: 2rem;
 }
 
+/* Resumo Section */
+.resumo {
+    width: 98.5%;
+    margin: auto;
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+    font-family: var(--font-sencondary);
+}
+
+.resumo h6 {
+    width: 100%;
+    height: 45px;
+    background-color: #FDF1EB;
+    font-family: var(--font-default);
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.resumo p {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+.resumo-text {
+    padding: 15px;
+}
+
+#ver-mais {
+    display: none;
+}
+
+#btnVerMais {
+    background: none;
+    text-decoration: none;
+    border: none;
+    font-family: var(--font-sencondary);
+    font-weight: 600;
+    color: #ED7839;
+}
+
+/* End Resumo Section */
+
 /* Responsive Main */
 @media screen and (max-width: 1280px) {
    .download-section {
@@ -405,6 +457,9 @@ body {
     .video-section {
         justify-content: center;
     }
+    .resumo {
+        width: 783px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -412,6 +467,9 @@ body {
         width: 600px;
     }
     .video-section img {
+        width: 600px;
+    }
+    .resumo {
         width: 600px;
     }
 }
@@ -424,6 +482,9 @@ body {
     .video-section img {
         width: 450px;
     }
+    .resumo {
+        width: 450px;
+    }
 }
 
 @media screen and (max-width: 770px) {
@@ -434,6 +495,9 @@ body {
         width: 300px;
     }
     .video-section img {
+        width: 300px;
+    }
+    .resumo {
         width: 300px;
     }
 }
@@ -455,4 +519,9 @@ body {
     .video-section img {
         width: 250px;
     }
+    .resumo {
+        width: 250px;
+    }
 }
+/* End Responsive Main */
+

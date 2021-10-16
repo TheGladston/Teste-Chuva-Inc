@@ -1,3 +1,4 @@
+// Dropdown Language Button
 /* When the user clicks on the button, 
 toggle between hiding and showing the dropdown content */
 function myFunction() {
@@ -17,4 +18,25 @@ window.onclick = function(event) {
       }
     }
   }
+}
+
+// ##################################
+
+
+// Read More Accordion
+
+function readMore() {
+    var pontos = document.getElementById("pontos");
+    var verMais = document.getElementById("ver-mais");
+    var btnVerMais = document.getElementById("btnVerMais");
+
+    if(pontos.style.display === "none") {
+        pontos.style.display = "inline";
+        verMais.style.display = "none";
+        btnVerMais.innerHTML = "ver mais";
+    }else {
+        pontos.style.display = "none";
+        verMais.style.display = "inline";
+        btnVerMais.innerHTML = "ver menos";
+    }
 }
