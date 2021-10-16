@@ -607,6 +607,22 @@ body {
     color: #FFFFFF;
 }
 
+#topicoEnviado {
+    display: none;
+    padding-bottom: 47px;
+}
+
+.ideias-duvidas .feedback-text {
+    width: 805.25px;
+    padding-bottom: 29px;
+}
+
+.ideias-duvidas a {
+    font-family: var(--font-sencondary);
+    font-size: 0.875rem;
+    color: #F48F44;
+}
+
 /* Responsive Main */
 @media screen and (max-width: 1635px) {
     .btnCriarTopico::after, .btnCriarTopico::before {
@@ -630,6 +646,9 @@ body {
     .discussoes {
         width: 783px;
     }
+    .ideias-duvidas .feedback-text {
+        width: 500px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -651,6 +670,9 @@ body {
         font-family: var(--font-sencondary);
         font-size: 0.875rem;
         margin: auto;
+    }
+    .ideias-duvidas .feedback-text {
+        width: 400px;
     }
 }
 
@@ -674,6 +696,9 @@ body {
         font-family: var(--font-sencondary);
         font-size: 0.875rem;
         margin: auto;
+    }
+    .ideias-duvidas .feedback-text {
+        width: 300px;
     }
 }
 
@@ -699,6 +724,9 @@ body {
         font-family: var(--font-sencondary);
         font-size: 0.875rem;
         margin: auto;
+    }
+    .ideias-duvidas .feedback-text {
+        width: 250px;
     }
 }
 
@@ -737,6 +765,9 @@ body {
         font-family: var(--font-sencondary);
         font-size: 0.875rem;
         margin: auto;
+    }
+    .ideias-duvidas .feedback-text {
+        width: 200px;
     }
 }
 /* End Responsive Main */

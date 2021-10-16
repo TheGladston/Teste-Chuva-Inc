@@ -6,18 +6,18 @@ function myFunction() {
 }
 
 // Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
+window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
 
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
     }
-  }
 }
 
 // ##################################
@@ -30,11 +30,11 @@ function readMore() {
     var verMais = document.getElementById("ver-mais");
     var btnVerMais = document.getElementById("btnVerMais");
 
-    if(pontos.style.display === "none") {
+    if (pontos.style.display === "none") {
         pontos.style.display = "inline";
         verMais.style.display = "none";
         btnVerMais.innerHTML = "ver mais";
-    }else {
+    } else {
         pontos.style.display = "none";
         verMais.style.display = "inline";
         btnVerMais.innerHTML = "ver menos";
@@ -49,11 +49,69 @@ function criarTopico() {
     var criarTopico = document.getElementById("criarTopico");
     var discussoesWrap = document.getElementById("discussoesWrap");
     var formCriarTopico = document.getElementById("formCriarTopico");
+    var topicoEnviado = document.getElementById("topicoEnviado");
 
     criarTopico.style.display = "none";
     discussoesWrap.style.display = "none";
     formCriarTopico.style.display = "inline";
+    topicoEnviado.style.display = "none";
 }
 
 // ##################################
 
+// Show topicoEnviado Section
+
+function topicoEnviado() {
+    var formCriarTopico = document.getElementById("formCriarTopico");
+    var topicoEnviado = document.getElementById("topicoEnviado");
+    var criarTopico = document.getElementById("criarTopico");
+
+    formCriarTopico.style.display = "none";
+    topicoEnviado.style.display = "inline";
+    criarTopico.style.display = "block";
+    criarTopico.innerHTML = "criar novo tópico";
+    
+}
+
+// ##################################
+
+// Input tag <strong></strong> and <em></em> in textarea
+
+function addTag(tag) {
+    var selection = '';
+    var textarea = document.getElementById('inputConteudo');
+
+    if (textarea.selectionStart === undefined) {
+        var textrange = document.selection.createRange();
+        var selection = textrange.text;
+
+        if (selection == '') {
+            alert('Sem texto selecionado.');
+        }
+
+        else {
+            textarea.focus();
+            textrange.text = '<' + tag + '>' + selection + '</' + tag + '>';
+        }
+    }
+
+    else {
+        if (textarea.selectionStart != textarea.selectionEnd) {
+            selection = textarea.value.substring(textarea.selectionStart, textarea.selectionEnd);
+
+            var selection_start = textarea.value.substring(0, textarea.selectionStart);
+            var selection_end = textarea.value.substring(textarea.selectionEnd);
+        }
+
+        if (selection == '') {
+            alert('Sem texto selecionado.');
+        }
+
+        else {
+            textarea.value = selection_start + '<' + tag + '>' + selection + '</' + tag + '>' + selection_end;
+        }
+    }
+
+}
+
+// ##################################

@@ -218,20 +218,28 @@
                                 <form class="row g-3">
                                     <div class="col-12">
                                       <label for="inputAssunto" class="form-label">Assunto</label>
-                                      <input type="text" class="form-control" id="inputAssunto" placeholder="Defina um tópico sucinto para notificar os autores...">
+                                      <input type="text" class="form-control" id="inputAssunto" placeholder="Defina um tópico sucinto para notificar os autores..." required>
                                     <div class="col-12">
                                       <label for="inputConteudo" class="form-label">Conteúdo</label>
-                                      <textarea class="form-control" id="inputConteudo" rows="5"></textarea>
+                                      <textarea class="form-control" id="inputConteudo" rows="5" required></textarea>
                                     </div>
                                     
                                     <div class="col-12 form-btns">
                                        <section class="config d-flex gap-3">
-                                        <button onclick="" class="btn btnNegrito" value="Bold"><i class="fas fa-bold"></i></button>
-                                        <button onclick="" class="btn btnItalico" value="Italic"><i class="fas fa-italic"></i></button>
+                                        <button onclick="addTag('strong')" class="btn btnNegrito" value="Bold"><i class="fas fa-bold"></i></button>
+                                        <button onclick="addTag('em')" class="btn btnItalico" value="Italic"><i class="fas fa-italic"></i></button>
                                        </section>
-                                      <button type="submit" class="btn btnEnviarTopico">Enviar</button>
+                                      <button type="submit" class="btn btnEnviarTopico" id="enviarTopico" onclick="topicoEnviado()">Enviar</button>
                                     </div>
                                   </form>
+                            </section>
+
+                            <section class="discussoes-wrap"  id="topicoEnviado">
+                                <div class="ideias-duvidas">
+                                    <h6 style="padding-bottom: 18px;">Seu tópico foi enviado com sucesso! :D</h6>
+                                    <p class="feedback-text">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                                    <a href="#">Descubra outros trabalhos</a>
+                                </div>
                             </section>
                             <button onclick="criarTopico()" class="btn btnCriarTopico" id="criarTopico"><i class="fas fa-plus"></i> criar tópico</button>
                         </section>
