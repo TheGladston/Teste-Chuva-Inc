@@ -40,3 +40,20 @@ function readMore() {
         btnVerMais.innerHTML = "ver menos";
     }
 }
+
+// ##################################
+
+// Show Form criarTopico
+
+function criarTopico() {
+    var criarTopico = document.getElementById("criarTopico");
+    var discussoesWrap = document.getElementById("discussoesWrap");
+    var formCriarTopico = document.getElementById("formCriarTopico");
+
+    criarTopico.style.display = "none";
+    discussoesWrap.style.display = "none";
+    formCriarTopico.style.display = "inline";
+}
+
+// ##################################
+

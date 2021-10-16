@@ -118,7 +118,6 @@ body {
 
 .principal {
     width: 100%;
-    height: 100vh;
     margin-left: 220px;
 }
 
@@ -446,7 +445,174 @@ body {
 
 /* End Resumo Section */
 
+
+
+/* Discussões Section */
+
+.discussoes {
+    width: 98.5%;
+    margin: auto;
+    border: 1px solid #ECECEC;
+    border-radius: 3px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+
+.discussoes-title {
+    width: 100%;
+    height: 45px;
+    background-color: #FDF1EB;
+    font-family: var(--font-default);
+    font-weight: 500;
+    font-size: 1.25rem;
+    padding-top: 10px;
+    padding-left: 15px;
+    margin: 0;
+}
+
+.discussoes-wrap {
+    padding: 15px;
+}
+
+.ideias-duvidas {
+    text-align: center;
+    padding-top: 15px;
+}
+
+.ideias-duvidas h6 {
+    font-family: var(--font-default);
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: #ED7839;
+    padding-bottom: 27px;
+}
+
+.ideias-duvidas p {
+    width: 626px;
+    font-family: var(--font-sencondary);
+    font-size: 0.875rem;
+    margin: auto;
+}
+
+.discussoes-icons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 35px;
+}
+
+.discussoes-icons img {
+    width: 50.26px;
+}
+
+.btnCriarTopico  {
+    display: block;
+    width: 133px;
+    height: 32px;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    font-family: var(--font-sencondary);
+    font-size: 0.938rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: auto;
+    padding: 0;
+}
+
+.btnCriarTopico::after {
+    content: "";
+     display: block;
+     position: relative;
+     top: -12px;
+     left: 132px;
+     width: 600px;
+     height: 1px;
+     background: #E7E7E7;
+}
+
+.btnCriarTopico::before {
+    content: "";
+     display: block;
+     position: relative;
+     top: 12px;
+     left: -601px;
+     width: 600px;
+     height: 1px;
+     background: #E7E7E7;
+}
+
+#formCriarTopico {
+    display: none;
+}
+
+.form-criarTopico form {
+    width: 99%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.form-criarTopico label {
+    font-family: var(--font-default);
+    font-weight: 700;
+    color: #ED7839;
+    margin-bottom: 0;
+}
+
+.form-criarTopico input {
+    font-family: var(--font-sencondary);
+    font-size: 0.875rem;
+    margin-bottom: 10px;
+}
+
+.form-criarTopico textarea {
+    resize: none;
+}
+
+.form-criarTopico p {
+    font-family: var(--font-sencondary);
+    font-size: 0.875rem;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.form-btns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-btns {
+    background-color: #CCCCCC;
+    width: 100%;
+    height: 31px;
+}
+
+.btnNegrito, .btnItalico {
+    width: 31px;
+    height: 31px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btnEnviarTopico {
+    display: block;
+    padding: 0;
+    width: 205px;
+    height: 31px;
+    background: linear-gradient(180deg, #FFB354 0%, #EE7A3A 100%);
+    font-family: var(--font-sencondary);
+    font-size: 0.938rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
 /* Responsive Main */
+@media screen and (max-width: 1635px) {
+    .btnCriarTopico::after, .btnCriarTopico::before {
+        display: none;
+   }
+}
 @media screen and (max-width: 1280px) {
    .download-section {
        justify-content: center;
@@ -458,6 +624,10 @@ body {
         justify-content: center;
     }
     .resumo {
+        width: 783px;
+    }
+
+    .discussoes {
         width: 783px;
     }
 }
@@ -472,6 +642,16 @@ body {
     .resumo {
         width: 600px;
     }
+
+    .discussoes {
+        width: 600px;
+    }
+    .ideias-duvidas p {
+        width: 500px;
+        font-family: var(--font-sencondary);
+        font-size: 0.875rem;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 870px) {
@@ -484,6 +664,16 @@ body {
     }
     .resumo {
         width: 450px;
+    }
+
+    .discussoes {
+        width: 450px;
+    }
+    .ideias-duvidas p {
+        width: 400px;
+        font-family: var(--font-sencondary);
+        font-size: 0.875rem;
+        margin: auto;
     }
 }
 
@@ -500,6 +690,16 @@ body {
     .resumo {
         width: 300px;
     }
+
+    .discussoes {
+        width: 300px;
+    }
+    .ideias-duvidas p {
+        width: 250px;
+        font-family: var(--font-sencondary);
+        font-size: 0.875rem;
+        margin: auto;
+    }
 }
 
 @media screen and (max-width: 635px) {
@@ -509,6 +709,9 @@ body {
 }
 
 @media screen and (max-width: 535px) {
+    .principal {
+        margin-left: 200px;
+    }
     .download-section {
         width: 80%;
         padding-top: .5rem;
@@ -521,6 +724,19 @@ body {
     }
     .resumo {
         width: 250px;
+    }
+
+    .discussoes {
+        width: 250px;
+    }
+    .discussoes-icons {
+        gap: 30px;
+    }
+    .ideias-duvidas p {
+        width: 200px;
+        font-family: var(--font-sencondary);
+        font-size: 0.875rem;
+        margin: auto;
     }
 }
 /* End Responsive Main */
