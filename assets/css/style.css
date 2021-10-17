@@ -319,6 +319,10 @@ body {
     padding-bottom: 5px;
 }
 
+.btn-download-small {
+    display: none !important;
+}
+
 .btn-star {
     width: 43px;
     height: 31px;
@@ -893,17 +897,17 @@ body {
         padding: 0;
     }
     .download-section h5 {
-        width: 300px;
+        width: 400px;
     }
     .video-section img {
-        width: 300px;
+        width: 400px;
     }
     .resumo {
-        width: 300px;
+        width: 400px;
     }
 
     .discussoes {
-        width: 300px;
+        width: 400px;
     }
     .ideias-duvidas p {
         width: 250px;
@@ -919,11 +923,11 @@ body {
 }
     #feedback-wait {
         height: 188px;
-        top: 361px;
+        top: 341px;
         left: 4px;
     }
     .footer {
-        width: 300px;
+        width: 400px;
         justify-content: center;
     }
     .galoa-info {
@@ -939,7 +943,8 @@ body {
 
 @media screen and (max-width: 535px) {
     .principal {
-        margin-left: 200px;
+        margin: 0;
+        padding-left: 110px;
     }
     .download-section {
         width: 80%;
@@ -948,24 +953,42 @@ body {
     .download-section h5 {
         font-size: .8rem;
     }
+    .btn-download {
+        display: none !important;
+    }
+    .btn-download-small {
+        display: flex !important;
+    }
+    .download-wrap section {
+        justify-content: center;
+    }
+    .download-wrap h6 {
+        font-size: 0.75rem;
+    }
     .video-section img {
         width: 250px;
     }
     .resumo {
-        width: 250px;
+        width: 200px;
     }
 
     .discussoes {
-        width: 250px;
+        width: 200px;
     }
     .discussoes-icons {
-        gap: 30px;
+        gap: 10px;
+    }
+    .topico-icons {
+        gap: 10px !important;
+    }
+    .topico-icons span{
+        font-size: .8rem;
     }
     .ideias-duvidas p {
-        width: 200px;
+        width: 180px;
         font-family: var(--font-sencondary);
-        font-size: 0.875rem;
-        margin: auto;
+        font-size: 0.75rem;
+        padding-right: 10px;
     }
     .ideias-duvidas .feedback-text {
         width: 200px;
