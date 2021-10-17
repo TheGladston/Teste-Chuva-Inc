@@ -50,11 +50,15 @@ function criarTopico() {
     var discussoesWrap = document.getElementById("discussoesWrap");
     var formCriarTopico = document.getElementById("formCriarTopico");
     var topicoEnviado = document.getElementById("topicoEnviado");
+    var feedbackAutores = document.getElementById("feedback-autores");
+    var feedbackWait = document.getElementById("feedback-wait");
 
     criarTopico.style.display = "none";
     discussoesWrap.style.display = "none";
     formCriarTopico.style.display = "inline";
     topicoEnviado.style.display = "none";
+    feedbackAutores.style.display = "none";
+    feedbackWait.style.display = "none";
 }
 
 // ##################################
@@ -64,13 +68,17 @@ function criarTopico() {
 function topicoEnviado() {
     var formCriarTopico = document.getElementById("formCriarTopico");
     var topicoEnviado = document.getElementById("topicoEnviado");
+    var feedbackAutores = document.getElementById("feedback-autores");
+    var feedbackWait = document.getElementById("feedback-wait");
     var criarTopico = document.getElementById("criarTopico");
 
     formCriarTopico.style.display = "none";
     topicoEnviado.style.display = "inline";
+    feedbackAutores.style.display = "block";
+    feedbackWait.style.display = "inline";
     criarTopico.style.display = "block";
     criarTopico.innerHTML = "criar novo tópico";
-    
+
 }
 
 // ##################################
@@ -115,3 +123,18 @@ function addTag(tag) {
 }
 
 // ##################################
+var liked = false;
+var likeCount = 1;
+
+function like() {
+    // var contador = document.getElementById("likeIndex").innerHTML;
+    if (liked === false) {
+        liked = true;
+        document.getElementById("likeIndex").innerHTML = likeCount + 1;
+        likeCount++;
+    } else {
+        liked = false;
+        document.getElementById("likeIndex").innerHTML = likeCount - 1;
+        likeCount--;
+    }
+}

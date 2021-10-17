@@ -201,7 +201,7 @@
 
                         <section class="discussoes">
                             <h6 class="discussoes-title">Discussões</h6>
-                            <section class="discussoes-wrap"  id="discussoesWrap">
+                            <section class="discussoes-wrap" id="discussoesWrap">
                                 <div class="ideias-duvidas">
                                     <h6>Compartilhe suas ideias ou dúvidas com os autores!</h6>
                                     <div class="discussoes-icons">
@@ -209,7 +209,8 @@
                                         <img src="./assets/images/icons/icone2.svg" alt="Ícone 2">
                                         <img src="./assets/images/icons/icone3.svg" alt="Ícone 3">
                                     </div>
-                                    <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+                                    <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a
+                                        curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
                                 </div>
                             </section>
 
@@ -217,31 +218,82 @@
                                 <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
                                 <form class="row g-3">
                                     <div class="col-12">
-                                      <label for="inputAssunto" class="form-label">Assunto</label>
-                                      <input type="text" class="form-control" id="inputAssunto" placeholder="Defina um tópico sucinto para notificar os autores..." required>
-                                    <div class="col-12">
-                                      <label for="inputConteudo" class="form-label">Conteúdo</label>
-                                      <textarea class="form-control" id="inputConteudo" rows="5" required></textarea>
-                                    </div>
-                                    
-                                    <div class="col-12 form-btns">
-                                       <section class="config d-flex gap-3">
-                                        <button onclick="addTag('strong')" class="btn btnNegrito" value="Bold"><i class="fas fa-bold"></i></button>
-                                        <button onclick="addTag('em')" class="btn btnItalico" value="Italic"><i class="fas fa-italic"></i></button>
-                                       </section>
-                                      <button type="submit" class="btn btnEnviarTopico" id="enviarTopico" onclick="topicoEnviado()">Enviar</button>
-                                    </div>
-                                  </form>
+                                        <label for="inputAssunto" class="form-label">Assunto</label>
+                                        <input type="text" class="form-control" id="inputAssunto"
+                                            placeholder="Defina um tópico sucinto para notificar os autores..."
+                                            required>
+                                        <div class="col-12">
+                                            <label for="inputConteudo" class="form-label">Conteúdo</label>
+                                            <textarea class="form-control" id="inputConteudo" rows="5"
+                                                required></textarea>
+                                        </div>
+
+                                        <div class="col-12 form-btns">
+                                            <section class="config d-flex gap-3">
+                                                <button onclick="addTag('strong')" class="btn btnNegrito"
+                                                    value="Bold"><i class="fas fa-bold"></i></button>
+                                                <button onclick="addTag('em')" class="btn btnItalico" value="Italic"><i
+                                                        class="fas fa-italic"></i></button>
+                                            </section>
+                                            <button type="submit" class="btn btnEnviarTopico" id="enviarTopico"
+                                                onclick="topicoEnviado()">Enviar</button>
+                                        </div>
+                                </form>
                             </section>
 
-                            <section class="discussoes-wrap"  id="topicoEnviado">
+                            <section class="discussoes-wrap" id="topicoEnviado">
                                 <div class="ideias-duvidas">
                                     <h6 style="padding-bottom: 18px;">Seu tópico foi enviado com sucesso! :D</h6>
-                                    <p class="feedback-text">Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!</p>
+                                    <p class="feedback-text">Agradecemos por sua contribuição, uma notificação será
+                                        enviada ao seu email assim que seu tópico for respondido!</p>
                                     <a href="#">Descubra outros trabalhos</a>
                                 </div>
                             </section>
-                            <button onclick="criarTopico()" class="btn btnCriarTopico" id="criarTopico"><i class="fas fa-plus"></i> criar tópico</button>
+                            <button onclick="criarTopico()" class="btn btnCriarTopico" id="criarTopico"><i
+                                    class="fas fa-plus"></i> criar tópico</button>
+
+                            <div class="topico-criado" id="feedback-autores">
+                                <h6>Assunto da pergunta aparece aqui</h6>
+                                <p>Carlos Henrique Santos</p>
+                                <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
+                                    dimensão e impacto de processo formativo situado impacto de processo formativo
+                                    processo...</p>
+                            </div>
+
+                            <div class="text-center" id="feedback-wait">
+                                <i class="fas fa-check-double"></i>
+                                <h5>Aguardando feedback dos autores</h5>
+                                <a href="">Editar tópico</a>
+                            </div>
+
+                            <div class="topico-criado">
+                                <h6>Assunto da pergunta aparece aqui</h6>
+                                <p>Carlos Henrique Santos</p>
+                                <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
+                                    dimensão e impacto de processo formativo situado impacto de processo formativo
+                                    processo...</p>
+                                <div class="topico-icons d-flex gap-3 pt-2 ">
+                                    <a href=""><i class="fas fa-ellipsis-v"></i></a>
+                                    <a class="btn btn-heart d-flex" id="btn-like" onclick="like()"><i
+                                            class="fas fa-heart"></i></a>
+                                    <span> <span id="likeIndex">1</span> like</span>
+                                    <span>1 resposta</span>
+                                </div>
+                            </div>
+                            <div class="topico-criado">
+                                <h6>Assunto da pergunta aparece aqui</h6>
+                                <p>Carlos Henrique Santos</p>
+                                <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
+                                    dimensão e impacto de processo formativo situado impacto de processo formativo
+                                    processo...</p>
+                                <div class="topico-icons d-flex gap-3 pt-2 ">
+                                    <a href=""><i class="fas fa-ellipsis-v"></i></a>
+                                    <a class="btn btn-heart d-flex" id="btn-like" onclick="like()"><i
+                                            class="fas fa-heart"></i></a>
+                                    <span> <span id="likeIndex">1</span> like</span>
+                                    <span>1 resposta</span>
+                                </div>
+                            </div>
                         </section>
                     </section>
                 </div>
