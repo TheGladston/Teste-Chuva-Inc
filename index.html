@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Teste Técnico Chuva Inc.</title>
 
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -80,6 +80,7 @@
                 </section>
             </header> <!-- Fim Header -->
 
+                <!-- Main -->
             <div class="container-fluid" id="main">
                 <!-- Download Section -->
                 <div class="download-section container-fluid d-flex flex-wrap">
@@ -127,6 +128,7 @@
                     </section>
                 </section> <!-- Fim Video + Detalhes Section-->
 
+                <!-- Resumo Section -->
                 <section class="resumo-section">
                     <div class="resumo">
                         <h6>Resumo</h6>
@@ -145,8 +147,9 @@
                                 id
                                 nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros
                                 vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant
+                                <!-- Accordion Resumo Section-->
                                 <span id="pontos">...</span>
-                                <span id="ver-mais">
+                                <span id="ver-mais"> <!-- Fim Accordion Resumo Section-->
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis
                                     auctor,
                                     mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et,
@@ -203,9 +206,10 @@
                                     dolor sit amet, consectetur adipiscing elit.
                                 </span> <button onclick="readMore()" id="btnVerMais">ver mais</button>
                             </p>
-                        </section>
+                        </section> <!-- Fim Resumo Section-->
                     </div>
 
+                    <!-- Discussões Section -->
                     <section class="discussoes">
                         <h6 class="discussoes-title">Discussões</h6>
                         <section class="discussoes-wrap" id="discussoesWrap">
@@ -221,6 +225,8 @@
                             </div>
                         </section>
 
+                        <!-- Formulário para Criar Tópico -->
+                        <!-- Display none default / Display inline onclick botão Criar Tópico -->
                         <section class="form-criarTopico" id="formCriarTopico">
                             <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
                             <form class="row g-3">
@@ -244,8 +250,10 @@
                                             onclick="topicoEnviado()">Enviar</button>
                                     </div>
                             </form>
-                        </section>
+                        </section> <!-- Fim Formulário para Criar Tópico -->
 
+                        <!-- Feedback do Envio do formulário -->
+                        <!-- Display none default / Display inline onclick botão Enviar -->
                         <section class="discussoes-wrap" id="topicoEnviado">
                             <div class="ideias-duvidas">
                                 <h6 style="padding-bottom: 18px;">Seu tópico foi enviado com sucesso! :D</h6>
@@ -269,8 +277,9 @@
                             <i class="fas fa-check-double"></i>
                             <h5>Aguardando feedback dos autores</h5>
                             <a href="">Editar tópico</a>
-                        </div>
+                        </div> <!-- Fim Feedback do Envio do formulário -->
 
+                        <!-- Tópicos visíveis -->
                         <div class="topico-criado">
                             <h6>Assunto da pergunta aparece aqui</h6>
                             <p>Carlos Henrique Santos</p>
@@ -279,8 +288,12 @@
                                 processo...</p>
                             <div class="topico-icons d-flex gap-3 pt-2 ">
                                 <a href=""><i class="fas fa-ellipsis-v"></i></a>
+
+                                <!-- Botão Like -->
+                                <!-- Adiciona +1 like onclick botão heart. Quando onclick na segunda vez remove like -->
                                 <a class="btn btn-heart d-flex" id="btn-like" onclick="like(0)"><i
-                                        class="fas fa-heart"></i></a>
+                                        class="fas fa-heart"></i></a> <!-- Fim Botão Like -->
+
                                 <span> <span id="likeIndex0">1</span> like</span>
                                 <span>1 resposta</span>
                             </div>
@@ -293,14 +306,19 @@
                                 processo...</p>
                             <div class="topico-icons d-flex gap-3 pt-2 ">
                                 <a href=""><i class="fas fa-ellipsis-v"></i></a>
+                                <!-- Botão Like -->
+                                <!-- Adiciona +1 like onclick botão heart. Quando onclick na segunda vez remove like -->
                                 <a class="btn btn-heart d-flex" id="btn-like" onclick="like(1)"><i
-                                        class="fas fa-heart"></i></a>
+                                        class="fas fa-heart"></i></a> <!-- Fim Botão Like -->
+
                                 <span> <span id="likeIndex1">1</span> like</span>
                                 <span>1 resposta</span>
                             </div>
-                        </div>
-                    </section>
-                </section>
+                        </div> <!-- Fim Tópicos visíveis -->
+                    </section> <!-- Fim Discussões Section -->
+                </section> <!-- Fim Resumo section -->
+
+                <!-- Footer Section -->
                 <section class="footer d-flex">
                     <div class="galoa">
                         <img class="img-fluid" src="./assets/images/logo-galoa.png" alt="Logo Galoá" style="width: 180px;">
@@ -310,11 +328,10 @@
                         <p><strong>Preservar a memória do evento e ampliar o acesso ao conhecimento científico</strong> gerado em eventos é a razão de ser da plataforma Galoá Proceedings.</p>
                         <p>Os trabalhos publicados aqui tem maior alcance e ficam disponíveis para toda a comunidade científica, mantendo aceso o debate científico fomentado pelos encontros e aumentando o impacto do evento.</p>
                     </div>
-                </section>
+                </section> <!-- Fim Footer Section -->
             </div>
         </section>
-    </div>
-
+    </div> <!-- Fim Main -->
 </body>
 
 </html>

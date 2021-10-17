@@ -119,8 +119,8 @@ body {
 /* End Responsive Navbar */
 
 /* End Navbar */
-
 /* ########################################################################## */
+
 
 /* Main Content */
 
@@ -273,8 +273,8 @@ body {
 /* End Responsive Header */
 
 /* End Header */
-
 /* ########################################################################## */
+
 
 /* Main */
 
@@ -284,6 +284,7 @@ body {
     padding-left: 36px;
 }
 
+/* Download Section */
 .download-section {
     width: 100%;
     padding-top: 1.5rem;
@@ -358,6 +359,11 @@ body {
     padding-top: 1rem;
 }
 
+/* Fim Download Section */
+/* ############################################# */
+
+/* Video + Detalhes Section */
+
 .video-section {
     justify-content: space-between;
     padding-top: 10px;
@@ -408,6 +414,9 @@ body {
     padding-top: 2rem;
 }
 
+/* Fim Video + Detalhes Section */
+/* ############################################### */
+
 /* Resumo Section */
 .resumo {
     width: 98.5%;
@@ -452,8 +461,7 @@ body {
 }
 
 /* End Resumo Section */
-
-
+/* #################################################### */
 
 /* Discussões Section */
 
@@ -483,6 +491,7 @@ body {
     padding: 15px;
 }
 
+/* Criar Tópico Section */
 .ideias-duvidas {
     text-align: center;
     padding-top: 15px;
@@ -550,6 +559,8 @@ body {
      background: #E7E7E7;
 }
 
+/* Formulário para Criar Tópico */
+
 #formCriarTopico {
     display: none;
 }
@@ -616,7 +627,10 @@ body {
     font-weight: 700;
     color: #FFFFFF;
 }
+/* Fim Formulário para Criar Tópico */
+/* ######################################################### */
 
+/* Feedback do Envio do formulário */
 #topicoEnviado {
     display: none;
     padding-bottom: 47px;
@@ -670,6 +684,11 @@ body {
 .topico-icons {
     align-items: center;
 }
+/* Fim Feedback do Envio do formulário */
+/* Fim Criar Tópico Section */
+/* ############################################################ */
+
+/* Tópicos Visíveis */
 
 .fa-ellipsis-v {
     color: #ED7839;
@@ -693,6 +712,10 @@ body {
     height: 14px;
 }
 
+/* Fim Tópicos Visíveis */
+/* ########################################################### */
+
+/* Feedback autores */
 #feedback-autores{
     display: none;
     height: 148px !important;
@@ -723,7 +746,10 @@ body {
     font-size: 0.875rem;
     color: #ED7839;
 }
+/* Fim Feedback autores */
+/* ####################################################### */
 
+/* Footer Section */
 .footer {
     width: 100%;
     border-top: 1px solid #E7E7E7;
@@ -757,6 +783,8 @@ body {
     margin-bottom: 16px;
     text-align: justify;
 }
+/* Footer Section */
+/* ############################################################### */
 
 /* Responsive Main */
 @media screen and (max-width: 1635px) {
@@ -958,4 +986,6 @@ body {
     }
 }
 /* End Responsive Main */
+/* End Main */
+/* ######################################################################### */
 
