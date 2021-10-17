@@ -16,289 +16,303 @@
 </head>
 
 <body>
-    <div>
-        <div class="d-flex">
-            <section class="navbar1">
-                <div class="logo">
-                    <a href="#" class="logo-btn btn">SLACA 2019</a>
-                    <div>
-                        <img class="logo-img" src="./assets/images/logo.png" alt="Logo SLACA">
-                    </div>
-                </div>
+    <div class="d-flex">
+        <!-- Menu de navegação fixo -->
+        <section class="navbar1">
+            <div class="logo">
+                <a href="#" class="logo-btn btn">SLACA 2019</a>
                 <div>
-                    <ul class="nav flex-column menu">
-                        <li>
-                            <a class="nav-link" href="#">Apresentação</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">Comitês</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">Autores</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">Eixos temáticos</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">Trabalhos</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">Contato</a>
-                        </li>
-                    </ul>
+                    <img class="logo-img" src="./assets/images/logo.png" alt="Logo SLACA">
                 </div>
-            </section>
-            <section class="principal">
-                <header class="topo container-fluid d-flex">
-                    <section class="titulo">
-                        <p class="p1">Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
-                        <p class="p2">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</p>
-                        <p class="p3">ISSN: 1234-5678</p>
-                    </section>
+            </div>
+            <div>
+                <ul class="nav flex-column menu">
+                    <li>
+                        <a class="nav-link" href="#">Apresentação</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Comitês</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Autores</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Eixos temáticos</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Trabalhos</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </section> <!-- Fim Menu de navegação fixo -->
 
-                    <section class="login-wrap d-flex gap-4 pe-4">
-                        <div class="dropdown">
-                            <button onclick="myFunction()" class="dropbtn"><i class="fas fa-globe"></i> PT, BR <i
-                                    class="fas fa-sort-down down"></i></button>
-                            <div id="myDropdown" class="dropdown-content">
-                                <a href="#">EN</a>
-                                <a href="#">SP</a>
-                            </div>
+        <section class="principal">
+            <!-- Header -->
+            <header class="topo container-fluid d-flex">
+                <section class="titulo">
+                    <p class="p1">Anais do Simpósio Latino Americano de Ciências de Alimentos</p>
+                    <p class="p2">Anais do 13º Simpósio Latino Americano de Ciência de Alimentos</p>
+                    <p class="p3">ISSN: 1234-5678</p>
+                </section>
+
+                <section class="login-wrap d-flex gap-4 pe-4">
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="dropbtn"><i class="fas fa-globe"></i> PT, BR <i
+                                class="fas fa-sort-down down"></i></button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="#">EN</a>
+                            <a href="#">SP</a>
                         </div>
-                        <div class="login d-flex">
-                            <div class="text-end">
-                                <span>Bem vindo!</span>
-                                <p>alguem12@galoascience.com</p>
-                            </div>
-                            <div class="ps-2 img-login">
-                                <img src="./assets/images/icons/Foto-login.png" alt="">
-                            </div>
-                            <span class="badge badge-light bg-danger login-badge">2</span>
-                        </div>
-                    </section>
-                </header>
-                <div class="container-fluid" id="main">
-                    <div class="download-section container-fluid d-flex flex-wrap">
-                        <h5 class="mb-3">Análise sensorial de preparações funcionais desenvolvidas para escolares entre
-                            09 e 15 anos, do município de Campinas/SP</h5>
-                        <section class="download-wrap">
-                            <section class="d-flex gap-2">
-                                <a href="#" class="btn btn-download d-flex"><i class="fas fa-download"></i>Download</a>
-                                <a href="#" class="btn btn-star d-flex"><i class="fas fa-star"></i></a>
-                                <a href="#" class="btn btn-doi d-flex"><img src="./assets/images/icons/doi.png"
-                                        alt=""></a>
-                            </section>
-                            <h6>COMO CITAR ESSE TRABALHO?</h6>
-                        </section>
                     </div>
-                    <section class="video-section container-fluid d-flex">
-                        <img class="img-fluid" src="./assets/images/video.png" alt="">
-                        <section class="detalhes">
-                            <h6>Detalhes</h6>
-                            <div class="detalhes-content">
-                                <p>Tipo de Apresentação: <strong>Pôster</strong></p>
-                                <p>Eixo temático: <strong>Alimentação e saúde (AS)</strong></p>
-                                <p>Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong></p>
-                                <section class="autores">
-                                    <p><strong>Autores:</strong></p>
-                                    <p>
-                                        Galileo Galilei¹ <br>
-                                        Berta Lange de Morretes² <br>
-                                        Isaac Newton³ <br>
-                                        Cesar Lattes¹ <br>
-                                        Stephen Hawking⁴
-                                    </p>
-                                </section>
-                                <section class="legenda">
-                                    <p>
-                                        ¹Universidade Estadual de Campinas <br>
-                                        ²Universidade de São Paulo <br>
-                                        ³Instituto Nacional de Pesquisas Espaciais <br>
-                                        ⁴Universidade Federal do Rio de Janeiro <br><br><br><br>
-                                    </p>
-                                </section>
-                            </div>
+                    <div class="login d-flex">
+                        <div class="text-end">
+                            <span>Bem vindo!</span>
+                            <p>alguem12@galoascience.com</p>
+                        </div>
+                        <div class="ps-2 img-login">
+                            <img src="./assets/images/icons/Foto-login.png" alt="">
+                        </div>
+                        <span class="badge badge-light bg-danger login-badge">2</span>
+                    </div>
+                </section>
+            </header> <!-- Fim Header -->
+
+            <div class="container-fluid" id="main">
+                <!-- Download Section -->
+                <div class="download-section container-fluid d-flex flex-wrap">
+                    <h5 class="mb-3">Análise sensorial de preparações funcionais desenvolvidas para escolares entre
+                        09 e 15 anos, do município de Campinas/SP</h5>
+                    <section class="download-wrap">
+                        <section class="d-flex gap-2">
+                            <a href="#" class="btn btn-download d-flex"><i class="fas fa-download"></i>Download</a>
+                            <a href="#" class="btn btn-star d-flex"><i class="fas fa-star"></i></a>
+                            <a href="#" class="btn btn-doi d-flex"><img src="./assets/images/icons/doi.png" alt=""></a>
                         </section>
+                        <h6>COMO CITAR ESSE TRABALHO?</h6>
+                    </section> <!-- Fim Download Section -->
+                </div>
+
+                <!-- Video + Detalhes Section-->
+                <section class="video-section container-fluid d-flex">
+                    <!-- Decidir usar a imagem video.png para representar o vídeo no layout, ao invés de um <iframe></iframe>, porque não há um link de vídeo específico. O contrário comprometeria a fidelidade visual com o protótipo modelo -->
+                    <img class="img-fluid" src="./assets/images/video.png" alt="">
+                    <section class="detalhes">
+                        <h6>Detalhes</h6>
+                        <div class="detalhes-content">
+                            <p>Tipo de Apresentação: <strong>Pôster</strong></p>
+                            <p>Eixo temático: <strong>Alimentação e saúde (AS)</strong></p>
+                            <p>Palavras-chaves: <strong>Alimentos funcionais, alimentação escolar.</strong></p>
+                            <section class="autores">
+                                <p><strong>Autores:</strong></p>
+                                <p>
+                                    Galileo Galilei¹ <br>
+                                    Berta Lange de Morretes² <br>
+                                    Isaac Newton³ <br>
+                                    Cesar Lattes¹ <br>
+                                    Stephen Hawking⁴
+                                </p>
+                            </section>
+                            <section class="legenda">
+                                <p>
+                                    ¹Universidade Estadual de Campinas <br>
+                                    ²Universidade de São Paulo <br>
+                                    ³Instituto Nacional de Pesquisas Espaciais <br>
+                                    ⁴Universidade Federal do Rio de Janeiro <br><br><br><br>
+                                </p>
+                            </section>
+                        </div>
                     </section>
-                    <section class="resumo-section">
-                        <div class="resumo">
-                            <h6>Resumo</h6>
-                            <section class="resumo-text">
-                                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis
+                </section> <!-- Fim Video + Detalhes Section-->
+
+                <section class="resumo-section">
+                    <div class="resumo">
+                        <h6>Resumo</h6>
+                        <section class="resumo-text">
+                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis
+                                auctor,
+                                mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et,
+                                iaculis
+                                quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum
+                                nisl,
+                                vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem
+                                vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem.
+                                Sed
+                                id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros
+                                vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed
+                                id
+                                nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros
+                                vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant
+                                <span id="pontos">...</span>
+                                <span id="ver-mais">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis
                                     auctor,
                                     mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et,
                                     iaculis
                                     quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum
                                     nisl,
                                     vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem
-                                    vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non lorem.
+                                    vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non
+                                    lorem. Sed
+                                    id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida
+                                    eros
+                                    vestibulum.
+
+                                    Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus
+                                    consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis.
                                     Sed
-                                    id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros
-                                    vestibulum Phasellus condimentum orci id leo condimentum lobortis et non lorem. Sed
-                                    id
-                                    nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida eros
-                                    vestibulum. Etiam aliquam dictum nisl, vel aliquet enim accumsan sit ametl accumsant
-                                    <span id="pontos">...</span>
-                                    <span id="ver-mais">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis
-                                        auctor,
-                                        mollis felis ut, commodo turpis. Phasellus felis mauris, egestas eget cursus et,
-                                        iaculis
-                                        quis lacus. Fusce auctor eros sed magna ultricies gravida. Etiam aliquam dictum
-                                        nisl,
-                                        vel aliquet enim accumsan sit amet. Donec finibus nisi tellus, ut viverra lorem
-                                        vestibulum ut. Phasellus condimentum orci id leo condimentum lobortis et non
-                                        lorem. Sed
-                                        id nisl metus. Quisque sollicitudin ligula in sapien scelerisque, ac gravida
-                                        eros
-                                        vestibulum.
+                                    dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat.
+                                    Maecenas
+                                    dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna
+                                    libero,
+                                    eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean
+                                    interdum
+                                    quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare
+                                    enim. Etiam
+                                    in laoreet odio.
 
-                                        Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus
-                                        consequat feugiat. Proin dictum justo arcu, quis vestibulum augue lacinia quis.
-                                        Sed
-                                        dignissim dui nulla, ut faucibus mauris sodales id. Aliquam erat volutpat.
-                                        Maecenas
-                                        dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam finibus urna
-                                        libero,
-                                        eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean
-                                        interdum
-                                        quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare
-                                        enim. Etiam
-                                        in laoreet odio.
+                                    Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id
+                                    eleifend
+                                    feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui,
+                                    in
+                                    lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex
+                                    nibh,
+                                    dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit
+                                    elementum
+                                    ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur
+                                    non odio.
+                                    Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu
+                                    scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit
+                                    eleifend massa,
+                                    eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel,
+                                    interdum
+                                    sapien. Aenean in porta arcu. Maecenas eu maximus massa.
 
-                                        Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id
-                                        eleifend
-                                        feugiat. Donec eleifend vehicula sem nec dapibus. Integer scelerisque neque dui,
-                                        in
-                                        lacinia erat molestie eu. Phasellus maximus dui eget lacus porta tempor. Ut ex
-                                        nibh,
-                                        dignissim quis purus semper, efficitur facilisis turpis. Praesent blandit
-                                        elementum
-                                        ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur
-                                        non odio.
-                                        Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu
-                                        scelerisque orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit
-                                        eleifend massa,
-                                        eu posuere mauris odio id odio. Morbi eu libero luctus, consectetur lorem vel,
-                                        interdum
-                                        sapien. Aenean in porta arcu. Maecenas eu maximus massa.
+                                    Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque
+                                    porta
+                                    pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit
+                                    amet
+                                    faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla
+                                    libero. Duis
+                                    risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu.
+                                    Aliquam
+                                    erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem
+                                    ipsum
+                                    dolor sit amet, consectetur adipiscing elit.
+                                </span> <button onclick="readMore()" id="btnVerMais">ver mais</button>
+                            </p>
+                        </section>
+                    </div>
 
-                                        Praesent velit dolor, dignissim sed quam ac, efficitur porta justo. Pellentesque
-                                        porta
-                                        pharetra felis ut hendrerit. Nulla facilisi. Aliquam erat volutpat. Nunc sit
-                                        amet
-                                        faucibus quam. Maecenas dapibus luctus dolor at viverra. Duis nec fringilla
-                                        libero. Duis
-                                        risus nibh, viverra ac orci nec, iaculis dictum sem. Aliquam at malesuada arcu.
-                                        Aliquam
-                                        erat volutpat. Donec varius ipsum purus, ut vehicula purus placerat vitae. Lorem
-                                        ipsum
-                                        dolor sit amet, consectetur adipiscing elit.
-                                    </span> <button onclick="readMore()" id="btnVerMais">ver mais</button>
-                                </p>
-                            </section>
-                        </div>
-
-                        <section class="discussoes">
-                            <h6 class="discussoes-title">Discussões</h6>
-                            <section class="discussoes-wrap" id="discussoesWrap">
-                                <div class="ideias-duvidas">
-                                    <h6>Compartilhe suas ideias ou dúvidas com os autores!</h6>
-                                    <div class="discussoes-icons">
-                                        <img src="./assets/images/icons/icone1.svg" alt="Ícone 1">
-                                        <img src="./assets/images/icons/icone2.svg" alt="Ícone 2">
-                                        <img src="./assets/images/icons/icone3.svg" alt="Ícone 3">
-                                    </div>
-                                    <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a
-                                        curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+                    <section class="discussoes">
+                        <h6 class="discussoes-title">Discussões</h6>
+                        <section class="discussoes-wrap" id="discussoesWrap">
+                            <div class="ideias-duvidas">
+                                <h6>Compartilhe suas ideias ou dúvidas com os autores!</h6>
+                                <div class="discussoes-icons">
+                                    <img src="./assets/images/icons/icone1.svg" alt="Ícone 1">
+                                    <img src="./assets/images/icons/icone2.svg" alt="Ícone 2">
+                                    <img src="./assets/images/icons/icone3.svg" alt="Ícone 3">
                                 </div>
-                            </section>
-
-                            <section class="form-criarTopico" id="formCriarTopico">
-                                <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
-                                <form class="row g-3">
-                                    <div class="col-12">
-                                        <label for="inputAssunto" class="form-label">Assunto</label>
-                                        <input type="text" class="form-control" id="inputAssunto"
-                                            placeholder="Defina um tópico sucinto para notificar os autores..."
-                                            required>
-                                        <div class="col-12">
-                                            <label for="inputConteudo" class="form-label">Conteúdo</label>
-                                            <textarea class="form-control" id="inputConteudo" rows="5"
-                                                required></textarea>
-                                        </div>
-
-                                        <div class="col-12 form-btns">
-                                            <section class="config d-flex gap-3">
-                                                <button onclick="addTag('strong')" class="btn btnNegrito"
-                                                    value="Bold"><i class="fas fa-bold"></i></button>
-                                                <button onclick="addTag('em')" class="btn btnItalico" value="Italic"><i
-                                                        class="fas fa-italic"></i></button>
-                                            </section>
-                                            <button type="submit" class="btn btnEnviarTopico" id="enviarTopico"
-                                                onclick="topicoEnviado()">Enviar</button>
-                                        </div>
-                                </form>
-                            </section>
-
-                            <section class="discussoes-wrap" id="topicoEnviado">
-                                <div class="ideias-duvidas">
-                                    <h6 style="padding-bottom: 18px;">Seu tópico foi enviado com sucesso! :D</h6>
-                                    <p class="feedback-text">Agradecemos por sua contribuição, uma notificação será
-                                        enviada ao seu email assim que seu tópico for respondido!</p>
-                                    <a href="#">Descubra outros trabalhos</a>
-                                </div>
-                            </section>
-                            <button onclick="criarTopico()" class="btn btnCriarTopico" id="criarTopico"><i
-                                    class="fas fa-plus"></i> criar tópico</button>
-
-                            <div class="topico-criado" id="feedback-autores">
-                                <h6>Assunto da pergunta aparece aqui</h6>
-                                <p>Carlos Henrique Santos</p>
-                                <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
-                                    dimensão e impacto de processo formativo situado impacto de processo formativo
-                                    processo...</p>
-                            </div>
-
-                            <div class="text-center" id="feedback-wait">
-                                <i class="fas fa-check-double"></i>
-                                <h5>Aguardando feedback dos autores</h5>
-                                <a href="">Editar tópico</a>
-                            </div>
-
-                            <div class="topico-criado">
-                                <h6>Assunto da pergunta aparece aqui</h6>
-                                <p>Carlos Henrique Santos</p>
-                                <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
-                                    dimensão e impacto de processo formativo situado impacto de processo formativo
-                                    processo...</p>
-                                <div class="topico-icons d-flex gap-3 pt-2 ">
-                                    <a href=""><i class="fas fa-ellipsis-v"></i></a>
-                                    <a class="btn btn-heart d-flex" id="btn-like" onclick="like()"><i
-                                            class="fas fa-heart"></i></a>
-                                    <span> <span id="likeIndex">1</span> like</span>
-                                    <span>1 resposta</span>
-                                </div>
-                            </div>
-                            <div class="topico-criado">
-                                <h6>Assunto da pergunta aparece aqui</h6>
-                                <p>Carlos Henrique Santos</p>
-                                <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
-                                    dimensão e impacto de processo formativo situado impacto de processo formativo
-                                    processo...</p>
-                                <div class="topico-icons d-flex gap-3 pt-2 ">
-                                    <a href=""><i class="fas fa-ellipsis-v"></i></a>
-                                    <a class="btn btn-heart d-flex" id="btn-like" onclick="like()"><i
-                                            class="fas fa-heart"></i></a>
-                                    <span> <span id="likeIndex">1</span> like</span>
-                                    <span>1 resposta</span>
-                                </div>
+                                <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a
+                                    curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
                             </div>
                         </section>
+
+                        <section class="form-criarTopico" id="formCriarTopico">
+                            <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
+                            <form class="row g-3">
+                                <div class="col-12">
+                                    <label for="inputAssunto" class="form-label">Assunto</label>
+                                    <input type="text" class="form-control" id="inputAssunto"
+                                        placeholder="Defina um tópico sucinto para notificar os autores..." required>
+                                    <div class="col-12">
+                                        <label for="inputConteudo" class="form-label">Conteúdo</label>
+                                        <textarea class="form-control" id="inputConteudo" rows="5" required></textarea>
+                                    </div>
+
+                                    <div class="col-12 form-btns">
+                                        <section class="config d-flex gap-3">
+                                            <button onclick="addTag('strong')" class="btn btnNegrito" value="Bold"><i
+                                                    class="fas fa-bold"></i></button>
+                                            <button onclick="addTag('em')" class="btn btnItalico" value="Italic"><i
+                                                    class="fas fa-italic"></i></button>
+                                        </section>
+                                        <button type="submit" class="btn btnEnviarTopico" id="enviarTopico"
+                                            onclick="topicoEnviado()">Enviar</button>
+                                    </div>
+                            </form>
+                        </section>
+
+                        <section class="discussoes-wrap" id="topicoEnviado">
+                            <div class="ideias-duvidas">
+                                <h6 style="padding-bottom: 18px;">Seu tópico foi enviado com sucesso! :D</h6>
+                                <p class="feedback-text">Agradecemos por sua contribuição, uma notificação será
+                                    enviada ao seu email assim que seu tópico for respondido!</p>
+                                <a href="#">Descubra outros trabalhos</a>
+                            </div>
+                        </section>
+                        <button onclick="criarTopico()" class="btn btnCriarTopico" id="criarTopico"><i
+                                class="fas fa-plus"></i> criar tópico</button>
+
+                        <div class="topico-criado" id="feedback-autores">
+                            <h6>Assunto da pergunta aparece aqui</h6>
+                            <p>Carlos Henrique Santos</p>
+                            <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
+                                dimensão e impacto de processo formativo situado impacto de processo formativo
+                                processo...</p>
+                        </div>
+
+                        <div class="text-center" id="feedback-wait">
+                            <i class="fas fa-check-double"></i>
+                            <h5>Aguardando feedback dos autores</h5>
+                            <a href="">Editar tópico</a>
+                        </div>
+
+                        <div class="topico-criado">
+                            <h6>Assunto da pergunta aparece aqui</h6>
+                            <p>Carlos Henrique Santos</p>
+                            <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
+                                dimensão e impacto de processo formativo situado impacto de processo formativo
+                                processo...</p>
+                            <div class="topico-icons d-flex gap-3 pt-2 ">
+                                <a href=""><i class="fas fa-ellipsis-v"></i></a>
+                                <a class="btn btn-heart d-flex" id="btn-like" onclick="like(0)"><i
+                                        class="fas fa-heart"></i></a>
+                                <span> <span id="likeIndex0">1</span> like</span>
+                                <span>1 resposta</span>
+                            </div>
+                        </div>
+                        <div class="topico-criado">
+                            <h6>Assunto da pergunta aparece aqui</h6>
+                            <p>Carlos Henrique Santos</p>
+                            <p>Comecinho da pergunta aparece aqui resente relato inscreve-se no campo da análise da
+                                dimensão e impacto de processo formativo situado impacto de processo formativo
+                                processo...</p>
+                            <div class="topico-icons d-flex gap-3 pt-2 ">
+                                <a href=""><i class="fas fa-ellipsis-v"></i></a>
+                                <a class="btn btn-heart d-flex" id="btn-like" onclick="like(1)"><i
+                                        class="fas fa-heart"></i></a>
+                                <span> <span id="likeIndex1">1</span> like</span>
+                                <span>1 resposta</span>
+                            </div>
+                        </div>
                     </section>
-                </div>
-            </section>
-        </div>
+                </section>
+                <section class="footer d-flex">
+                    <div class="galoa">
+                        <img class="img-fluid" src="./assets/images/logo-galoa.png" alt="Logo Galoá" style="width: 180px;">
+                        <a href="">Saiba mais</a>
+                    </div>
+                    <div class="galoa-info">
+                        <p><strong>Preservar a memória do evento e ampliar o acesso ao conhecimento científico</strong> gerado em eventos é a razão de ser da plataforma Galoá Proceedings.</p>
+                        <p>Os trabalhos publicados aqui tem maior alcance e ficam disponíveis para toda a comunidade científica, mantendo aceso o debate científico fomentado pelos encontros e aumentando o impacto do evento.</p>
+                    </div>
+                </section>
+            </div>
+        </section>
     </div>
 
 </body>

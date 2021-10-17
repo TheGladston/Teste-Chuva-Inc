@@ -123,18 +123,21 @@ function addTag(tag) {
 }
 
 // ##################################
-var liked = false;
-var likeCount = 1;
 
-function like() {
+// Like button count
+
+var liked = [false, false];
+var likeBox = [1, 1];
+
+function like(index) {
     // var contador = document.getElementById("likeIndex").innerHTML;
-    if (liked === false) {
-        liked = true;
-        document.getElementById("likeIndex").innerHTML = likeCount + 1;
-        likeCount++;
+    if (!liked[index]) {
+        liked[index] = true;
+        document.getElementById("likeIndex" + index).innerHTML = likeBox[index] + 1;
+        likeBox[index]++;
     } else {
-        liked = false;
-        document.getElementById("likeIndex").innerHTML = likeCount - 1;
-        likeCount--;
+        liked[index] = false;
+        document.getElementById("likeIndex" + index).innerHTML = likeBox[index] - 1;
+        likeBox[index]--;
     }
 }
