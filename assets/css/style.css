@@ -994,11 +994,11 @@ body {
         width: 200px;
     }
     #feedback-autores{
-        height: 215px !important;
+        height: 285px !important;
     }
     #feedback-wait {
-        height: 215px;
-        top: 383px;
+        height: 285px;
+        top: 350px;
         left: 2px;
     }
     #feedback-wait h5 {
