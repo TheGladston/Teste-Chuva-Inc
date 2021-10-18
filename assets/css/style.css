@@ -476,7 +476,7 @@ body {
     border: 1px solid #ECECEC;
     border-radius: 3px;
     margin-top: 20px;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
 }
 
 .discussoes-title {
@@ -731,7 +731,7 @@ body {
     padding-top: 30px;
     position: absolute;
     top: 278px;
-    left: 13px;
+    left: 11px;
     width: 98%;
     height: 148px;
     border: 1px solid #E7E7E7;
@@ -818,8 +818,8 @@ body {
         width: 500px;
     }
     #feedback-wait {
-        top: 298px;
-        left: 10px;
+        top: 300px;
+        left: 8px;
     }
     .footer {
         width: 783px;
